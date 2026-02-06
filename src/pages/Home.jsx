@@ -1,5 +1,6 @@
 import React from 'react';
 import ServicesFeatureSection from '../components/Cards/ServicesFeatureSection';
+import EcosystemHub from '../components/Cards/EcoSystemHub';
 
 const Home = () => {
     return (
@@ -62,63 +63,10 @@ const Home = () => {
             </div>
 
             <ServicesFeatureSection/>
+            {/* <EcosystemHub/> */}
 
             {/* Dark Section */}
-            <div className="bg-[#0f172a] text-white py-20 relative overflow-hidden">
-                <div className="max-w-[1400px] mx-auto px-6">
-
-                    {/* Dots Pattern Background (Simulated) */}
-                    <div className="absolute top-0 right-0 p-10 opacity-20 hidden md:block">
-                        <div className="grid grid-cols-6 gap-2">
-                            {[...Array(24)].map((_, i) => (
-                                <div key={i} className="w-1 h-1 bg-white rounded-full"></div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                        <div>
-                            <h2 className="text-4xl font-normal leading-tight mb-8">
-                                The right door, at the right price,<br />
-                                delivered on time
-                            </h2>
-                            <p className="text-gray-400 mb-6 text-sm leading-relaxed max-w-lg">
-                                Garage doors are an investment. Let's find you the right one.
-                            </p>
-                            <p className="text-gray-400 mb-12 text-sm leading-relaxed max-w-lg">
-                                C.H.I Overhead Doors has decades of experience in manufacturing high-quality garage doors to meet any need. And for added peace of mind, all come with the best warranty in the industry.
-                            </p>
-
-                            <h3 className="text-xl mb-6">Browse our doors for:</h3>
-
-                            <div className="grid grid-cols-2 gap-6 w-full max-w-3xl">
-                                {/* Card 1 */}
-                                <div className="relative group cursor-pointer overflow-hidden h-48">
-                                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all z-10"></div>
-                                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop" alt="Homes" className="w-full h-full object-cover" />
-                                    <div className="absolute bottom-4 left-4 z-20">
-                                        <span className="text-xl font-semibold border-b-4 border-blue-600 pb-1">Homes</span>
-                                    </div>
-                                </div>
-                                {/* Card 2 */}
-                                <div className="relative group cursor-pointer overflow-hidden h-48">
-                                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all z-10"></div>
-                                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop" alt="Businesses" className="w-full h-full object-cover" />
-                                    <div className="absolute bottom-4 left-4 z-20">
-                                        <span className="text-xl font-semibold border-b-4 border-green-600 pb-1">Businesses</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Right side spacer or image if needed, mostly empty in design or just extension of dark area */}
-                        <div className="hidden md:block">
-                            {/* Potential decoration or empty space as per design */}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                   </div>
     );
 };
 
