@@ -1,17 +1,5 @@
-import Navbar from './components/Navbar'
-import MainSection from './components/MainSection'
-import ServicesDiagram from './components/ServicesDiagram'
-import Footer from './components/Footer'
+const App = () => {
+  return null;
+};
 
-function App() {
-    return (
-        <>
-            <Navbar />
-            <MainSection />
-            <ServicesDiagram />
-            <Footer />
-        </>
-    )
-}
-
-export default App
+export default App;
