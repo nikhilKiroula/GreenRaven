@@ -1,32 +1,22 @@
-
-
-import { Facebook, Twitter, Instagram, Youtube, Linkedin } from 'lucide-react';
-
-// Custom Pinterest Icon since it's not in standard Lucide set
-const Pinterest = ({ size = 20, className }) => (
-    <svg 
-        width={size} 
-        height={size} 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        strokeWidth="2" 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
-        className={className}
-    >
-        <path d="M8 14.5c2.5 3.3 2.5 7.2 0.2 10.5" />
-        <path d="M8 20c-3.3 0-6-2.7-6-6 0-3.3 2.7-6 6-6 2.2 0 4.1 1.2 5.2 3" />
-        <path d="M20.5 11c1-3.2.5-6.8-1.5-9.6C17.1 1.2 13.2 0 9 0 2 0 0 5 0 10c0 2.5 1.5 5 2.5 6" />
-        <path d="M12 11c0-2-1.3-3-3-3s-3 1-3 3c0 2 2 3 3 3 1.5 0 3-2 3-3Z" />
-        <line x1="12" y1="11" x2="16" y2="21" />
-    </svg>
-);
+import React from 'react';
+import { 
+    Facebook, 
+    Twitter, 
+    Instagram, 
+    Youtube, 
+    Linkedin, 
+    MapPin, 
+    Phone, 
+    Sun, 
+    Zap, 
+    Battery,
+    Leaf 
+} from 'lucide-react';
 
 const Footer = () => {
     return (
         <footer className="font-sans">
-            {/* Top Call-to-Action Banner */}
+            {/* Top Call-to-Action Banner - Adapted for Green Energy Theme */}
             <div className="bg-[#0a1128] py-12 px-4 relative overflow-hidden">
                 {/* Background Pattern (Subtle dots) */}
                 <div className="absolute top-0 right-0 p-4 opacity-20">
@@ -39,10 +29,10 @@ const Footer = () => {
 
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6 max-w-7xl">
                     <h2 className="text-2xl md:text-3xl text-white font-light tracking-wide text-center md:text-left">
-                        Discuss your requirements with a local dealer today.
+                        Powering your future with sustainable energy solutions.
                     </h2>
                     <button className="bg-transparent border border-white/30 text-white hover:bg-white hover:text-[#0a1128] transition-colors px-8 py-3 uppercase text-sm tracking-widest font-medium">
-                        Find a dealer
+                        Get a Quote
                     </button>
                 </div>
             </div>
@@ -52,87 +42,107 @@ const Footer = () => {
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
                         
-                        {/* Left Column: Brand & Social */}
-                        <div className="lg:w-1/4 flex flex-col gap-8">
+                        {/* Left Column: Brand & Contact Info */}
+                        <div className="lg:w-1/3 flex flex-col gap-8">
                             {/* Logo Representation */}
-                            <div className="flex items-center gap-1">
-                                <span className="text-4xl font-black tracking-tighter uppercase font-oswald">C.H.I.</span>
-                                <div className="grid grid-cols-2 gap-0.5 ml-1">
-                                    <div className="w-3 h-3 bg-red-600"></div>
-                                    <div className="w-3 h-3 bg-red-600"></div>
-                                    <div className="w-3 h-3 bg-red-600"></div>
-                                    <div className="w-3 h-3 bg-red-600"></div>
+                            <div className="flex items-center gap-2">
+                                <div className="text-green-500">
+                                    <Leaf size={32} strokeWidth={2.5} />
                                 </div>
-                                <span className="text-[0.5rem] self-start ml-0.5">®</span>
+                                <div className="flex flex-col">
+                                    <span className="text-3xl font-black tracking-tighter uppercase font-oswald leading-none">
+                                        GreenRaven
+                                    </span>
+                                    <span className="text-xs tracking-[0.2em] text-slate-400 uppercase">
+                                        Inc.
+                                    </span>
+                                </div>
                             </div>
                             
-                            <div className="text-xs text-slate-400 -mt-6">
-                                a <span className="font-bold uppercase">Nucor</span> company
+                            {/* Contact Details from Image */}
+                            <div className="flex flex-col gap-4 text-slate-400 text-sm">
+                                <div className="flex items-start gap-3">
+                                    <MapPin size={18} className="mt-1 text-green-500 shrink-0" />
+                                    <p className="leading-relaxed">
+                                        123 Main Street, Suite 100<br />
+                                        Madison, WI 12345
+                                    </p>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <Phone size={18} className="text-green-500 shrink-0" />
+                                    <p>888-555-1212</p>
+                                </div>
                             </div>
 
-                            <div className="text-sm text-slate-300 mt-4">
-                                © C.H.I. Overhead Doors
-                            </div>
-
-                            {/* Social Icons */}
-                            <div className="flex gap-4 text-slate-400">
-                                <a href="#" className="hover:text-white transition-colors"><Pinterest size={20} /></a>
-                                <a href="#" className="hover:text-white transition-colors"><Linkedin size={20} /></a>
-                                <a href="#" className="hover:text-white transition-colors"><Facebook size={20} /></a>
-                                <a href="#" className="hover:text-white transition-colors"><Instagram size={20} /></a>
-                                <a href="#" className="hover:text-white transition-colors"><Youtube size={20} /></a>
-                                <a href="#" className="hover:text-white transition-colors"><Twitter size={20} /></a>
+                            <div className="text-sm text-slate-500 mt-2">
+                                © GreenRaven, Inc. All rights reserved.
                             </div>
                         </div>
 
                         {/* Right Section: Links Columns */}
-                        <div className="lg:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div className="lg:w-2/3">
+                            <h3 className="text-sm font-bold tracking-widest text-green-500 uppercase mb-6 border-b border-slate-800 pb-4">
+                                Site Links
+                            </h3>
                             
-                            {/* Column 1: RESIDENTIAL */}
-                            <div className="flex flex-col gap-4">
-                                <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase">Residential</h3>
-                                <ul className="flex flex-col gap-3 text-sm font-light text-slate-300">
-                                    <li><a href="#" className="hover:text-white">Home</a></li>
-                                    <li><a href="#" className="hover:text-white">Our collection</a></li>
-                                    <li><a href="#" className="hover:text-white">Customer showcase</a></li>
-                                    <li><a href="#" className="hover:text-white">Build a door</a></li>
-                                </ul>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                {/* Column 1 */}
+                                <div className="flex flex-col gap-4">
+                                    <ul className="flex flex-col gap-3 text-sm font-light text-slate-300">
+                                        <li><a href="#" className="hover:text-green-400 transition-colors">Contact Us</a></li>
+                                        <li><a href="#" className="hover:text-green-400 transition-colors">About Us</a></li>
+                                        <li><a href="#" className="hover:text-green-400 transition-colors">Industry News</a></li>
+                                    </ul>
+                                </div>
+
+                                {/* Column 2 */}
+                                <div className="flex flex-col gap-4">
+                                    <ul className="flex flex-col gap-3 text-sm font-light text-slate-300">
+                                        <li><a href="#" className="hover:text-green-400 transition-colors">Promotions</a></li>
+                                        <li><a href="#" className="hover:text-green-400 transition-colors">Resellers</a></li>
+                                        <li><a href="#" className="hover:text-green-400 transition-colors">FAQ's</a></li>
+                                    </ul>
+                                </div>
+
+                                {/* Column 3 */}
+                                <div className="flex flex-col gap-4">
+                                    <ul className="flex flex-col gap-3 text-sm font-light text-slate-300">
+                                        <li><a href="#" className="hover:text-green-400 transition-colors">Gallery</a></li>
+                                        <li><a href="#" className="hover:text-green-400 transition-colors">Our Products</a></li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            {/* Column 2: COMMERCIAL */}
-                            <div className="flex flex-col gap-4">
-                                <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase">Commercial</h3>
-                                <ul className="flex flex-col gap-3 text-sm font-light text-slate-300">
-                                    <li><a href="#" className="hover:text-white">Home</a></li>
-                                    <li><a href="#" className="hover:text-white">Our collection</a></li>
-                                    <li><a href="#" className="hover:text-white">Case studies</a></li>
-                                </ul>
-                            </div>
+                            {/* Partner Logos Section (Mocked based on image brands) */}
+                            <div className="mt-12 pt-8 border-t border-slate-800/50">
+                                <h4 className="text-xs font-bold tracking-widest text-slate-500 uppercase mb-6">Trusted Partners</h4>
+                                <div className="flex flex-wrap items-center justify-between gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                                    {/* Mock Text Logos using Fonts to mimic brands */}
+                                    <div className="flex items-center gap-1 font-bold text-lg text-orange-500 tracking-tight">
+                                        <div className="w-0 h-0 border-l-[6px] border-l-transparent border-b-[10px] border-b-orange-500 border-r-[6px] border-r-transparent"></div>
+                                        IRONRIDGE
+                                    </div>
+                                    
+                                    <div className="font-bold text-lg text-red-500 tracking-wider flex items-center gap-1">
+                                        <Sun size={18} strokeWidth={3} />
+                                        HELIENE
+                                    </div>
 
-                            {/* Column 3: DEALERS */}
-                            <div className="flex flex-col gap-4">
-                                <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase">Dealers</h3>
-                                <ul className="flex flex-col gap-3 text-sm font-light text-slate-300">
-                                    <li><a href="#" className="hover:text-white">Dealer center</a></li>
-                                    <li><a href="#" className="hover:text-white">Residential model search</a></li>
-                                    <li><a href="#" className="hover:text-white">Commercial model search</a></li>
-                                    <li><a href="#" className="hover:text-white">Windload configurator</a></li>
-                                    <li><a href="#" className="hover:text-white">Become a dealer</a></li>
-                                </ul>
-                            </div>
+                                    <div className="font-black text-xl text-white tracking-tighter">
+                                        EG4<span className="text-green-500">.</span>
+                                    </div>
 
-                            {/* Column 4: USEFUL LINKS */}
-                            <div className="flex flex-col gap-4">
-                                <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase">Useful Links</h3>
-                                <ul className="flex flex-col gap-3 text-sm font-light text-slate-300">
-                                    <li><a href="#" className="hover:text-white">About C.H.I.</a></li>
-                                    <li><a href="#" className="hover:text-white">Architects corner</a></li>
-                                    <li><a href="#" className="hover:text-white">FAQs</a></li>
-                                    <li><a href="#" className="hover:text-white">Careers</a></li>
-                                </ul>
-                            </div>
+                                    <div className="font-bold text-lg text-orange-400 tracking-wide uppercase">
+                                        GENERAC
+                                    </div>
 
+                                    <div className="font-bold text-lg text-blue-400 tracking-tight flex items-center">
+                                        Trina<span className="font-light text-white">solar</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -140,14 +150,21 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div className="bg-[#0f1420] py-4 border-t border-slate-800">
                 <div className="container mx-auto px-4 max-w-7xl">
-                    <div className="flex flex-col md:flex-row gap-4 text-xs text-slate-400 font-light">
-                        <a href="#" className="hover:text-white">Privacy policy</a>
-                        <span className="hidden md:inline">|</span>
-                        <a href="#" className="hover:text-white">Terms & Conditions</a>
-                        <span className="hidden md:inline">|</span>
-                        <a href="#" className="hover:text-white">California Privacy Policy</a>
-                        <span className="hidden md:inline">|</span>
-                        <a href="#" className="hover:text-white">Forced Labour</a>
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <div className="flex flex-wrap justify-center md:justify-start gap-4 text-xs text-slate-400 font-light">
+                            <a href="#" className="hover:text-white">Privacy Policy</a>
+                            <span className="hidden md:inline">|</span>
+                            <a href="#" className="hover:text-white">Terms of Service</a>
+                            <span className="hidden md:inline">|</span>
+                            <a href="#" className="hover:text-white">Sitemap</a>
+                        </div>
+                        
+                        <div className="flex gap-4 text-slate-400">
+                            <a href="#" className="hover:text-green-400 transition-colors"><Facebook size={16} /></a>
+                            <a href="#" className="hover:text-green-400 transition-colors"><Twitter size={16} /></a>
+                            <a href="#" className="hover:text-green-400 transition-colors"><Linkedin size={16} /></a>
+                            <a href="#" className="hover:text-green-400 transition-colors"><Youtube size={16} /></a>
+                        </div>
                     </div>
                 </div>
             </div>
