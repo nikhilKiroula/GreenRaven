@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { IoArrowRedoSharp } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import aboutVideo from "https://drive.google.com/file/d/1EdF2YlZT2DS6ar1l7TgVGAsEuKfHFLme/view";
+// import aboutVideo from "https://drive.google.com/file/d/1EdF2YlZT2DS6ar1l7TgVGAsEuKfHFLme/view";
 
 const About = () => {
   const containerRef = useRef(null);
@@ -54,7 +54,7 @@ const About = () => {
       <section className="relative h-[70vh] md:h-[80vh] min-h-[520px] w-full overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src={aboutVideo}
+          src={"aboutVideo"}
           autoPlay
           loop
           muted

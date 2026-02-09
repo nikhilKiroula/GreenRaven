@@ -1,6 +1,6 @@
 import React from 'react';
 import ServicesFeatureSection from './ServicesFeatureSection';
-import EcosystemHub from './EcoSystemHub';
+// import EcosystemHub from './EcoSystemHub';
 import solarImage1 from '../../assets/images/Solar1.jpg';
 import solarImage2 from '../../assets/images/Solar2.jpg';
 import transformerImage from '../../assets/images/transformer.jpg';
