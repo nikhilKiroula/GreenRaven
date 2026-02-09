@@ -27,5 +27,5 @@ node_modules
 dist
 build
 .env
-
+*.mp4
 *.zip

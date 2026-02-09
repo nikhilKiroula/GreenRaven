@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { IoArrowRedoSharp } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import aboutVideo from "../assets/videos/promoVideo.mp4";
+import aboutVideo from "https://drive.google.com/file/d/1EdF2YlZT2DS6ar1l7TgVGAsEuKfHFLme/view";
 
 const About = () => {
   const containerRef = useRef(null);
