@@ -36,15 +36,15 @@ const steps = [
 
 const HowWeWork = () => {
   return (
-    <section className="bg-white border-3 border-red-700">
+    <section className="bg-white  ">
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-32 grid grid-cols-1 lg:grid-cols-12 gap-24">
 
         {/* LEFT CONTENT */}
         <div className="lg:col-span-5 pl-10 pt-20 ">
-          <h2 className="text-4xl font-semibold mb-6">
+          <h2 className="text-7xl font-semibold mb-6">
             How We Work
           </h2>
-          <p className="text-gray-700 leading-relaxed text-j">
+          <p className="text-gray-700 leading-relaxed text-2xl">
             Green Raven supports energy projects by combining
             manufacturer-direct supply with end-to-end execution support.
           </p>

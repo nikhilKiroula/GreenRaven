@@ -61,31 +61,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* ================= ABOUT TEXT ================= */}
-      <section className="bg-[#0B132B] mt-28">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="text-gray-100 space-y-6 leading-relaxed">
-            <p>
-              Built by industry veterans with decades of experience, GreenRaven
-              has been developing manufacturer and installer relationships since
-              2012.
-            </p>
-            <p>
-              We eliminate unnecessary middlemen while ensuring speed,
-              transparency, and industry-grade support.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-md p-10 shadow-xl hover:-translate-y-2 transition-all">
-            <p className="text-gray-700 leading-relaxed">
-              After testing Green Raven for a commercial project, we cut
-              material costs almost in half. Incredible support and
-              communication.
-            </p>
-            <p className="mt-4 font-semibold text-gray-900">– John K.</p>
-          </div>
-        </div>
-      </section>
 
       {/* ================= HOW WE WORK ================= */}
 
