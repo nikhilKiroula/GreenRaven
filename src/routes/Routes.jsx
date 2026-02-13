@@ -8,7 +8,7 @@ import Partners from "../pages/Partners";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 // import ProductsServices from "../pages/ProductsServices";
-import MainProductServices from "../pages/Product and Services/MainProductsServices"
+// import MainProductServices from "../pages/Product and Services/MainProductsServices"
 
 const router = createBrowserRouter([
   {
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "gallery", element: <Gallery /> },
       { path: "partners", element: <Partners /> },
-      { path: "contact", element: <Contact /> },
-      { path: "product_and_services", element: <MainProductServices /> },
+      { path: "contact", element: <Contact /> }
+      // { path: "product_and_services", element: <MainProductServices /> },
     ],
   },
 ]);

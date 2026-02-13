@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className="container mx-auto px-4 py-8 lg:py-16 overflow-hidden">
+        <section className="container mx-auto px-4 py-8 lg:py-16 overflow-hidden my-10">
             {/* Main Content Section */}
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-20">
                 {/* Left Column - Contact Details */}
@@ -69,7 +69,7 @@ const Contact = () => {
                     100% { transform: translateX(-50%); }
                 }
             `}</style>
-        </div>
+        </section>
     );
 };
 

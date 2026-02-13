@@ -5,7 +5,7 @@ const NavMenu = () => {
   const linkClass = ({ isActive }) =>
     isActive
       ? " font-medium  border-b-2 border-[#cc0033] p-2 text-[#cc0033]"
-      : "text-gray-700 hover:text-black";
+      : "text-white hover:text-red-600";
 
   return (
     <nav className="hidden lg:flex items-center gap-8 text-sm ">
@@ -17,9 +17,9 @@ const NavMenu = () => {
       <NavLink to="/about" className={linkClass}>
         About Us
       </NavLink>
-      <NavLink to="/product_and_services" className={linkClass}>
+      {/* <NavLink to="/product_and_services" className={linkClass}>
         Products & Services
-      </NavLink>
+      </NavLink> */}
 
       <NavLink to="/gallery" className={linkClass}>
         Gallery

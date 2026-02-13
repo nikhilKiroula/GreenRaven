@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <section className="my-8">
+      <section className="">
         <Outlet />
       </section>
       <section className="">

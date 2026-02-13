@@ -7,7 +7,7 @@ import HowWeWork from "./HowWeWork";
 const About = () => {
 
   return (
-    <main className="w-full overflow-x-hidden">
+    <main className="w-full overflow-x-hidden mt-10">
       {/* ================= HERO ================= */}
       <section className="w-full bg-white">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-18">

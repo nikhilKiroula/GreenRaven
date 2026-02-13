@@ -12,6 +12,7 @@ import {
     Battery,
     Leaf 
 } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -31,9 +32,9 @@ const Footer = () => {
                     <h2 className="text-2xl md:text-3xl text-white font-light tracking-wide text-center md:text-left">
                         Powering your future with sustainable energy solutions.
                     </h2>
-                    <button className="bg-transparent border border-white/30 text-white hover:bg-white hover:text-[#0a1128] transition-colors px-8 py-3 uppercase text-sm tracking-widest font-medium">
-                        Get a Quote
-                    </button>
+                   <NavLink to={"/contact"}> <button className="bg-transparent border border-white/30 text-white hover:bg-white hover:text-[#0a1128] transition-colors px-8 py-3 uppercase text-sm tracking-widest font-medium">
+                        Contact Us
+                    </button></NavLink>
                 </div>
             </div>
 

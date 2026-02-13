@@ -1,90 +1,93 @@
 import React from 'react';
-import ServicesFeatureSection from './ServicesFeatureSection';
-// import EcosystemHub from './EcoSystemHub';
 import solarImage1 from '../../assets/images/Solar1.jpg';
 import solarImage2 from '../../assets/images/Solar2.jpg';
 import transformerImage from '../../assets/images/transformer.jpg';
 import powerSupplyImg from '../../assets/images/powerSupply.jpg';
 import ResidentialEnergySection from './ResidentialEnergySection';
-import GreenRavenBrowseSection from './GreenRavenBrowseSection';
+
 import { NavLink } from 'react-router-dom';
 import CommercialEnergySection from './CommercialEnergySection';
-import RealEnergyMakeover from './RealEnergyMakeover';
 
+import FloatingCards from "./FloatingCards"
+import SalesStorySection from './SalesStorySection';
+import InstallerPartenerNetwork from './InstallerPartnerNetwork';
+import GeothermalSolutions from './GeothermalSolutions';
+import Hardware from './Hardware';
 
 const Home = () => {
     return (
         <div className="font-sans text-gray-800">
             {/* Hero Section */}
-            <div className="max-w-[1400px] mx-auto px-6 pt-16 pb-12">
-                <h1 className="text-5xl md:text-6xl font-normal leading-tight mb-4">
-                    The <span className="underline decoration-red-600 decoration-2 underline-offset-4">GreenRaven</span> Meeting<br />
-                    the energy needs for tommorow
-                </h1>
-                <p className="text-gray-500 text-lg mb-8">Green Raven supports the energy production industry as a central hub—primarily in commercial solar, while also supporting geothermal, generators, and other power solutions. We help customers execute projects by providing.</p>
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-                <div className="flex space-x-4 mb-20">
-                    <NavLink target='_blank' to='https://calendar.app.google/9qsvNemHcAkYwesn9
-'><button className="bg-[#cc0033] text-white px-8 py-3 text-sm font-bold uppercase tracking-wide hover:bg-red-800 transition-colors cursor-pointer">
-                        Contact Us
-                    </button></NavLink>
-                    <NavLink to={"/product_and_services"}><button className="bg-[#5c6670] text-white px-8 py-3 text-sm font-bold uppercase tracking-wide hover:bg-gray-700 transition-colors cursor-pointer">
-                        Products & Services
-                    </button></NavLink>
-                </div>
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <img
+      src="https://media.istockphoto.com/id/1450272068/photo/wind-sun-and-water-energy.webp?a=1&b=1&s=612x612&w=0&k=20&c=YIuMY_oGbKmKIe3c5TCt-Y7gMrw1VA4cQMURfvdlipE="
+      alt="Energy background"
+      className="w-full h-full object-cover"
+    />
+    {/* Dark Overlay */}
+    <div className="absolute inset-0 bg-black/30"></div>
+  </div>
 
-                {/* Image Grid */}
-                <div className="grid grid-cols-12 gap-6 items-end relative">
-                    {/* Item 1 - Small House */}
-                    <div className="col-span-12 md:col-span-2 relative top-[-40px]">
-                        <div className="w-full h-40 bg-gray-200 overflow-hidden shadow-sm">
-                            <img src={solarImage1} alt="Small Garage" className="w-full h-full object-cover" />
-                        </div>
-                    </div>
+  {/* Content Container */}
+  <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 text-center mt-24">
 
-                    {/* Item 2 - Kids playing */}
-                    <div className="col-span-12 md:col-span-5">
-                        <div className="w-full h-96 bg-gray-200 overflow-hidden shadow-sm">
-                            <img src={solarImage2} alt="Kids playing" className="w-full h-full object-cover" />
-                        </div>
-                    </div>
+    {/* Heading */}
+    <h1 className="text-5xl md:text-6xl font-semibold leading-tight mb-6 text-white">
+      Meeting the Energy Needs for <br />
+      <span className="text-[#cc0033]">Tomorrow</span>
+    </h1>
 
-                    {/* Item 3 - Firehouse / Commercial */}
-                    <div className="col-span-12 md:col-span-3 relative">
-                        <div className="w-full h-64 bg-gray-200 overflow-hidden shadow-sm mb-12">
-                            <img src={transformerImage} alt="Glass Door" className="w-full h-full object-cover" />
-                        </div>
-                        {/* Handwriting Text */}
-                        <div className="absolute -bottom-8 -left-10 text-red-700 font-handwriting rotate-[-5deg] text-center w-40">
-                            <p className="font-dancing-script text-lg leading-tight">Turn heads in<br />your neighborhood</p>
-                            <svg className="w-20 h-10 ml-10 text-red-700" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10,10 Q50,40 90,10" stroke="currentColor" strokeWidth="2" fill="none" />
-                                <path d="M90,10 L80,15 M90,10 L85,20" stroke="currentColor" strokeWidth="2" />
-                            </svg>
-                        </div>
-                    </div>
+    {/* Subtext */}
+    <p className="text-white text-lg max-w-3xl mx-auto mb-10">
+      GreenRaven supports the energy production industry as a central hub —
+      specializing in commercial solar, geothermal systems, generators,
+      and advanced power solutions.
+    </p>
 
-                    {/* Item 4 - Close up wood */}
-                    <div className="col-span-12 md:col-span-2">
-                        <div className="w-full h-80 bg-gray-200 overflow-hidden shadow-sm">
-                            <img src={powerSupplyImg} alt="Wood Detail" className="w-full h-full object-cover" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+    {/* Buttons */}
+    <div className="flex justify-center gap-6 ">
+      <NavLink
+        target="_blank"
+        to="https://calendar.app.google/9qsvNemHcAkYwesn9"
+      >
+        <button className="bg-[#cc0033] text-white px-8 py-3 cursor-pointer rounded-full font-semibold hover:bg-red-800 transition">
+          Contact Us
+        </button>
+      </NavLink>
 
-            <GreenRavenBrowseSection/>
+      {/* <NavLink to="/">
+        <button className="bg-white/20 backdrop-blur-md cursor-pointer text-white px-8 py-3 rounded-full font-semibold hover:bg-white/30 transition">
+          Our Solutions →
+        </button>
+      </NavLink> */}
+    </div>
 
-            <ServicesFeatureSection/>
+       <div>
+         <h3 className='text-[20px] text-white font-semibold my-4'>
+            We help customers execute projects by providing:
+        </h3>
+        <FloatingCards/>   
+       </div>
+    
+  </div>
+</section>
+
+            <ResidentialEnergySection />
+
+            <SalesStorySection/>
             
-            <ResidentialEnergySection/>
 
-            <RealEnergyMakeover/>
+            <CommercialEnergySection />
 
-            <CommercialEnergySection/>
+            <InstallerPartenerNetwork/>
 
-            {/* Dark Section */}
-                   </div>
+            <GeothermalSolutions/>
+
+            <Hardware/>
+        </div>
     );
 };
 
