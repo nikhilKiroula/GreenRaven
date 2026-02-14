@@ -17,9 +17,9 @@ const NavMenu = () => {
       <NavLink to="/about" className={linkClass}>
         About Us
       </NavLink>
-      {/* <NavLink to="/product_and_services" className={linkClass}>
+      <NavLink to="/product_and_services" className={linkClass}>
         Products & Services
-      </NavLink> */}
+      </NavLink>
 
       <NavLink to="/gallery" className={linkClass}>
         Gallery
