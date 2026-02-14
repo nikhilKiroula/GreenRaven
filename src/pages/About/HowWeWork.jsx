@@ -42,7 +42,8 @@ const HowWeWork = () => {
         <div className="lg:col-span-5 pl-10">
           <h2 className="text-7xl font-semibold mb-6 leading-tight">
             <span className="block">How</span>
-            <span className="block">We Work</span>
+            <span className="">We </span>
+            <span className="text-green-600">Work</span>
           </h2>
 
           <p className="text-gray-700 leading-relaxed text-[22px] text-justify w-100">
