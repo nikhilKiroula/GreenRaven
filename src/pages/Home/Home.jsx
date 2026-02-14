@@ -52,7 +52,7 @@ const Home = () => {
         target="_blank"
         to="https://calendar.app.google/9qsvNemHcAkYwesn9"
       >
-        <button className="bg-[#cc0033] text-white px-8 py-3 cursor-pointer rounded-full font-semibold hover:bg-red-800 transition">
+        <button className="bg-green-600 text-white px-8 py-3 cursor-pointer rounded-full font-semibold hover:bg-red-800 transition">
           Contact Us
         </button>
       </NavLink>
