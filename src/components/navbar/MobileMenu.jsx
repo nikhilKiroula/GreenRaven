@@ -8,7 +8,7 @@ const MobileMenu = ({ onClose }) => {
       <NavLink to="/gallery" onClick={onClose}>Gallery</NavLink>
       <NavLink to="/partners" onClick={onClose}>Partners</NavLink>
       <NavLink to="/contact" onClick={onClose}>Contact Us</NavLink>
-      {/* <NavLink to="/product_and_services" onClick={onClose}>Products & Services</NavLink> */}
+      <NavLink to="/product_and_services" onClick={onClose}>Products & Services</NavLink> 
 
       <style jsx>{`
         .active {
