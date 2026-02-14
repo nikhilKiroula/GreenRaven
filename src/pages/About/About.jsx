@@ -5,8 +5,8 @@ import HowWeWork from "./HowWeWork";
 
 const About = () => {
   return (
-    <main className="w-full overflow-x-hidden pt-10 mt-10 bg-gradient-to-b from-white via-green-50 to-white">
-
+    <main className="w-full overflow-x-hidden pt-10 bg-[#eee] mt-18 ">
+    
       {/* ================= HERO ================= */}
       <section className="w-full">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16">

@@ -7,7 +7,6 @@ import Gallery from "../pages/Gallery";
 import Partners from "../pages/Partners";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
-// import ProductsServices from "../pages/ProductsServices";
 import MainProductServices from "../pages/Product and Services/MainProductsServices"
 
 const router = createBrowserRouter([
