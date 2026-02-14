@@ -8,7 +8,7 @@ import ReadyToGrow from './ReadyToGrow';
 
 const MainProductsServices = () => {
   return (
-    <div className="bg-white font-sans text-slate-800">
+    <div className="bg-white font-sans text-slate-800 mt-10">
       <HeroSection />
       <FeaturesSection />
       <BusinessServicesSection />
