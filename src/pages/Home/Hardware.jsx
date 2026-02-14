@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 
 const Hardware = () => {
   return (
-    <section className=" py-8   px-6">
+    <section className=" mb-8   px-6">
       <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 items-start">
 
         {/* LEFT SIDE */}
@@ -11,14 +11,8 @@ const Hardware = () => {
           
 
           {/* Big Heading */} 
-          {/* Big Heading */}
-<h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-6 text-green-600 tracking-tight">
- Hardware 
-</h2>
-
-<p className="text-2xl text-gray-700 leading-relaxed mb-6 max-w-xl">
-Direct from the Manufacturer
-</p>
+        
+        <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-10 tracking-tight"> Hardware  <br /> Premium Build Quality Direct from the<span className="text-green-600"> Manufacturer.</span> </h2>
 
 
 

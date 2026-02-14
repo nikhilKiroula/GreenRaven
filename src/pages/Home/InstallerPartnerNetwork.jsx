@@ -54,13 +54,16 @@ const InstallerPartenerNetwork = () => {
           </div>
 
           {/* Description */}
+          <div>
+            <h3 className="text-3xl font-semibold text-green-600 my-4"> Prevalling Wage Consulting</h3>
 <p className="text-gray-700 leading-relaxed">
- Prevalling Wage Consulting
+
 Ensure Davis-Bacon compliance and certified payroll reporting confidence for your public works projects.
 </p>
+          </div>
 
 {/* Feature List */}
-<ul className="space-y-3 text-gray-600 pt-2">
+<ul className="space-y-3 text-gray-600 ">
   <li className="flex items-start gap-3">
     <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
     Nationwide shipping at volume pricing

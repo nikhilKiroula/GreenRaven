@@ -14,8 +14,7 @@ const About = () => {
 
             {/* LEFT CONTENT */}
             <div>
-
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+              <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-gray-900 mb-6">
                 About{" "}
                 <span className="bg-gradient-to-r from-green-600 to-emerald-400 bg-clip-text text-transparent">
                   Us
@@ -71,7 +70,6 @@ const About = () => {
                   </div>
                 ))}
               </div>
-
             </div>
 
             {/* RIGHT IMAGE */}
@@ -89,51 +87,47 @@ const About = () => {
       <HowWeWork />
 
       {/* ================= VIDEO SECTION ================= */}
-      <section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          src="https://res.cloudinary.com/dal2cdpxb/video/upload/v1771053138/promoVideo_ugqm5i.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+     <section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
+  <video
+    className="absolute inset-0 w-full h-full object-cover"
+    src="https://res.cloudinary.com/dal2cdpxb/video/upload/v1771053138/promoVideo_ugqm5i.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
 
-        {/* Text on Video */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <h2 className="text-white text-3xl md:text-5xl font-bold mb-6">
-            Powering a Sustainable Future
-          </h2>
-          <p className="text-gray-200 max-w-2xl">
-            Delivering reliable energy solutions with innovation,
-            transparency, and long-term partnerships.
-          </p>
-        </div>
-      </section>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60"></div>
 
-      {/* ================= CTA ================= */}
-      <section className="bg-gradient-to-r from-[#0B132B] to-[#1C2541]">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 py-20 text-center">
-          <h3 className="text-2xl md:text-3xl font-semibold text-white mb-8">
-            Let’s talk about your next energy project.
-          </h3>
+  {/* Content */}
+  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
 
-          <NavLink
-            to="/contact"
-            className="group inline-flex items-center bg-green-600 hover:bg-green-700 px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <span className="text-white font-medium transition-transform group-hover:-translate-x-2">
-              Contact Us
-            </span>
-            <span className="ml-3 text-white opacity-0 transition-all group-hover:opacity-100">
-              <IoArrowRedoSharp />
-            </span>
-          </NavLink>
-        </div>
-      </section>
+    <h2 className="text-white text-3xl md:text-5xl font-bold mb-6">
+      Powering a Sustainable Future
+    </h2>
+
+    <p className="text-gray-200 max-w-2xl mb-8">
+      Delivering reliable energy solutions with innovation,
+      transparency, and long-term partnerships.
+    </p>
+
+    {/* BUTTON */}
+    <NavLink
+      to="/partners"
+      className="group inline-flex items-center bg-green-600 px-6 py-3 overflow-hidden hover:bg-green-700"
+    >
+      <span className="text-white font-medium transition-transform duration-300 group-hover:-translate-x-2 ">
+        Become Partner
+      </span>
+      <span className="ml-3 text-white opacity-0 translate-x-[-6px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+        <IoArrowRedoSharp />
+      </span>
+    </NavLink>
+
+  </div>
+</section>
 
     </main>
   );

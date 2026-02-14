@@ -2,14 +2,16 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section className="container mx-auto px-4 py-8 lg:py-16 overflow-hidden my-10">
+        <section className="container mx-auto px-10 py-8 lg:py-16 overflow-hidden my-10">
             {/* Main Content Section */}
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-20">
                 {/* Left Column - Contact Details */}
                 <div className="lg:w-1/2 flex flex-col relative justify-center">
                     <div className="z-10 bg-white">
-                        <h1 className="text-4xl lg:text-5xl font-light text-slate-800 mb-6">
-                            Contact Us
+                        <h1 className="text-4xl lg:text-5xl font-semibold text-slate-800 mb-6">
+                            <span>Contact </span>
+                            <span className='text-green-600'>Us</span>
+                             
                         </h1>
                         <div className="w-16 h-1 bg-green-600 mb-10"></div>
 
