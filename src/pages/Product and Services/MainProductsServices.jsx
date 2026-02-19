@@ -1,5 +1,5 @@
 import React from 'react'
-import Solar1 from "../../assets/images/solar1.jpg";
+import Solar1 from "../../assets/images/Solar1.jpg";
 import FloatingCards from "./FloatingCards";
 import { MapPin, Users } from 'lucide-react';
 import BusinessServices from './BusinessServices';
