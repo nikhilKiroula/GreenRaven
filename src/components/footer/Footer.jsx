@@ -13,6 +13,7 @@ import {
     Leaf 
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
+import Logo from '../navbar/Logo';
 
 const Footer = () => {
     return (
@@ -46,19 +47,9 @@ const Footer = () => {
                         {/* Left Column: Brand & Contact Info */}
                         <div className="lg:w-1/3 flex flex-col gap-8">
                             {/* Logo Representation */}
-                            <div className="flex items-center gap-2">
-                                <div className="text-green-500">
-                                    <Leaf size={32} strokeWidth={2.5} />
-                                </div>
-                                <div className="flex flex-col">
-                                    <span className="text-3xl font-black tracking-tighter uppercase font-oswald leading-none">
-                                        GreenRaven
-                                    </span>
-                                    <span className="text-xs tracking-[0.2em] text-slate-400 uppercase">
-                                        Inc.
-                                    </span>
-                                </div>
-                            </div>
+                           <div className='-m-0.5'>
+                             <Logo/>
+                           </div>
                             
                             {/* Contact Details from Image */}
                             <div className="flex flex-col gap-4 text-slate-400 text-sm">

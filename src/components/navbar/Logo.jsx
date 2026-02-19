@@ -1,10 +1,22 @@
-import { MdEnergySavingsLeaf } from "react-icons/md";
-import LogoImg from "../../assets/images/logo.png"
+import LogoImg from "../../assets/images/logo.png";
+
 const Logo = () => {
   return (
-    <div className="text-2xl font-bold tracking-wide flex items-center">
-        <MdEnergySavingsLeaf className="text-green-600"/>
-      <span className="text-white">GreenRaven</span>
+    <div className="flex items-center">
+      <picture>
+        <img
+          src={LogoImg}
+          alt="Logo"
+          className="
+            h-8          /* Mobile */
+            sm:h-10      /* Small screens */
+            md:h-12      /* Medium screens */
+            xl:h-14      /* Extra large screens */
+            w-auto
+            object-contain
+          "
+        />
+      </picture>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const About = () => {
                 <div className="text-gray-600 leading-loose text-lg space-y-6 text-justify">
                   <p>
                     Built by industry veterans with decades of experience,
-                    GreenRaven is based in Sacramento, CA and has been
+                    Green Raven is based in Sacramento, CA and has been
                     developing relationships with product manufacturers and
                     installers since 2012.
                   </p>
