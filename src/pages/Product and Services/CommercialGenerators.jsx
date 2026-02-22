@@ -64,8 +64,8 @@ const CommercialGenerators = () => {
             <h2 className="text-[42px] md:text-[52px] pt-10 text-[#1e293b] leading-[1.1] tracking-tight">
               {/* <span className="font-extralight block mb-1">Flexible solar financing</span> */}
               <span className="font-extrabold block ">
-                Commercial Generators & <br />
-                Geothermal Solutions
+                Commercial Generators<br />
+                 & Geothermal Solutions
               </span>
             </h2>
           </div>
