@@ -57,10 +57,10 @@ const CommercialGenerators = () => {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-18 pb-16 text-center">
+      <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-5 pt-18 pb-16 text-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-15 gap-y-12 items-start ">
           {/* LEFT: Heading with specific font weights */}
-          <div className="max-w-xl">
+          <div className="max-w-2xl ">
             <h2 className="text-[42px] md:text-[52px] pt-10 text-[#1e293b] leading-[1.1] tracking-tight">
               {/* <span className="font-extralight block mb-1">Flexible solar financing</span> */}
               <span className="font-extrabold block ">

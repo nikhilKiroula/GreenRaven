@@ -18,7 +18,7 @@ const StrategicBusinessServices = () => {
           The left side contains the Heading and Large Image.
           The right side contains the Small Images and Description.
         */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 items-start ">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 items-start ">
           {/* LEFT COLUMN: Heading + Large Image */}
           <div className="flex flex-col space-y-10">
             {/* Heading Section */}
