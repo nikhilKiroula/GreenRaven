@@ -56,13 +56,13 @@ const Footer = () => {
                                 <div className="flex items-start gap-3">
                                     <MapPin size={18} className="mt-1 text-green-500 shrink-0" />
                                     <p className="leading-relaxed">
-                                        123 Main Street, Suite 100<br />
-                                        Madison, WI 12345
+                                        4809 W 41st Street, Suite 202 #567 <br />
+                                        Sioux Falls, SD 57106
                                     </p>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <Phone size={18} className="text-green-500 shrink-0" />
-                                    <p>888-555-1212</p>
+                                    <p>415-816-2476</p>
                                 </div>
                             </div>
 
@@ -81,8 +81,8 @@ const Footer = () => {
                                 {/* Column 1 */}
                                 <div className="flex flex-col gap-4">
                                     <ul className="flex flex-col gap-3 text-sm font-light text-slate-300">
-                                        <li><a href="#" className="hover:text-green-400 transition-colors">Contact Us</a></li>
-                                        <li><a href="#" className="hover:text-green-400 transition-colors">About Us</a></li>
+                                        <li><NavLink to={"/contact"} className="hover:text-green-400 transition-colors">Contact Us</NavLink></li>
+                                        <li><NavLink to={"/about"} className="hover:text-green-400 transition-colors">About Us</NavLink></li>
                                         <li><a href="#" className="hover:text-green-400 transition-colors">Industry News</a></li>
                                     </ul>
                                 </div>

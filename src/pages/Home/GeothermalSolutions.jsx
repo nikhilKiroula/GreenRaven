@@ -36,16 +36,16 @@ const GeothermalSolutions = () => {
             
           </p>
 
-          <ul className=" pl-6 space-y-2">
-            <li className="flex items-start gap-3"><span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+          <ul className="list-disc marker:text-green-600 pl-6 space-y-2">
+            <li className="">
             Commercial-scale geothermal heating & cooling systems</li>
-            <li className="flex items-start gap-3"><span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+            <li className="">
             System design, equipment sourcing, and logistics support</li>
-            <li className="flex items-start gap-3"><span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+            <li className="">
             Integration with solar and generator solutions</li>
-            <li className="flex items-start gap-3"><span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+            <li className="">
             Trusted manufacturer partnerships</li>
-            <li className="flex items-start gap-3"><span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+            <li className="">
 Support for new construction and retrofit projects</li>
           </ul>
 

@@ -63,30 +63,30 @@ Ensure Davis-Bacon compliance and certified payroll reporting confidence for you
           </div>
 
 {/* Feature List */}
-<ul className="space-y-3 text-gray-600 ">
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+<ul className="space-y-3 list-disc marker:text-green-600 text-gray-600 ">
+  <li className="">
+    
     Nationwide shipping at volume pricing
   </li>
 
   
 
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+  <li className="">
+    
     Trusted US and international suppliers
   </li>
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+  <li className="">
+    
     Nationwide installer partner network
   </li>
 
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+  <li className="">
+    
     Project matchmaking services
   </li>
 
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+  <li className="">
+    
     Volume pricing and exclusive access
   </li>
 </ul>

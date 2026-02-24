@@ -4,6 +4,14 @@ import { Play } from "lucide-react";
 const Hardware = () => {
   return (
     <section className=" mb-8   px-6">
+
+      <div className="mx-8 bottom-[-28px] shadow-lg mb-8 w-[280px] left-8 bg-white shadow-lg flex items-center gap-3 px-6 py-4 border-b-4 border-green-600">
+        <span className="text-green-600 text-xl">🧐</span>
+        <span className="uppercase tracking-widest text-sm font-semibold text-nowrap text-gray-700">
+          Hardware Acquisition
+        </span>
+      </div>
+
       <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 items-start">
 
         {/* LEFT SIDE */}
@@ -49,35 +57,30 @@ const Hardware = () => {
 
           {/* Description */}
 <p className="text-gray-700 leading-relaxed">
- Prosure soler and energy resuipment directty-from, tep manufacteries, chin nasing miochemen
+ Leverage our direct-to-manufacturer relationships and greatly increase the growth of your business.
 
 </p>
 
 {/* Feature List */}
-<ul className="space-y-3 text-gray-600 pt-2">
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-    Nationwide shipping at volume pricing
+<ul className="list-disc marker:text-green-600 space-y-3 text-gray-600 pt-2">
+  <li className="">
+    
+    Solar panels, inverters, batteries and more at pricing significantly lower than our competition without the large volume typically needed in order to realize those savings.
   </li>
 
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-    Trusted US and international suppliers
+  <li className="">
+    
+    Products include commercial generators and other energy equipment supply.
   </li>
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-    Nationwide installer partner network
-  </li>
-
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-    Penels inverters, batteries, and more
+  <li className="">
+    Trusted manufacturers for either US Domestic content or low cost international suppliers.
   </li>
 
-  <li className="flex items-start gap-3">
-    <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-    Volume pricing and exclusive access
+  <li className="">
+    U.S. shipping is guaranteed to be the lowest in the U.S. with no hidden “handling or markups.
   </li>
+
+  
 </ul>
 
 

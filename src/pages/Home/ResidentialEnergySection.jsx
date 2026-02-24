@@ -31,14 +31,13 @@ const ResidentialEnergySection = () => {
         {/* Right */}
         <div className="text-gray-600 text-lg leading-relaxed space-y-4">
           <p>
-            GreenRaven provides flexible financing solutions for residential
-            solar projects, making clean energy accessible and affordable.
+            Through strategic partnerships, GreenRaven provides access to residential and commercial solar projects expanding accessibility for our partner’s services.
           </p>
 
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Access to residential PPAs and flexible financing options</li>
-            <li>Low minimum system sizes for easier adoption</li>
-            <li>Solutions tailored to fit your home and energy goals</li>
+          <ul className="list-disc marker:text-green-600 pl-6 space-y-2">
+            <li>Access residential PPA’s regardless of your company sales volume.</li>
+            <li>Access commercial PPA’s, even for small system sizes.</li>
+            <li>SUnique finance access for otherwise “impossible” to finance projects</li>
           </ul>
         </div>
       </div>

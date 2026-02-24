@@ -1,19 +1,21 @@
-import ResidentialEnergySection from "./ResidentialEnergySection";
 
-import { NavLink } from "react-router-dom";
-import CommercialEnergySection from "./CommercialEnergySection";
-import HeroImg from "../../assets/images/heroImage.png";
-import FloatingCards from "./FloatingCards";
-import SalesStorySection from "./SalesStorySection";
-import InstallerPartenerNetwork from "./InstallerPartnerNetwork";
-import GeothermalSolutions from "./GeothermalSolutions";
-import Hardware from "./Hardware";
+import ResidentialEnergySection from './ResidentialEnergySection';
+
+import { NavLink } from 'react-router-dom';
+import CommercialEnergySection from './CommercialEnergySection';
+import HeroImg from "../../assets/images/heroImage.png"
+import FloatingCards from "./FloatingCards"
+import SalesStorySection from './SalesStorySection';
+import InstallerPartenerNetwork from './InstallerPartnerNetwork';
+import GeothermalSolutions from './GeothermalSolutions';
+import Hardware from './Hardware';
 
 const Home = () => {
   return (
-    <div className="font-sans text-gray-800">
+    <section className="font-sans text-gray-800 flex flex-col gap-8">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <article className="relative min-h-screen flex items-center justify-center overflow-hidden">
+
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -27,6 +29,7 @@ const Home = () => {
 
         {/* Content Container */}
         <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 text-center mt-24">
+
           {/* Heading */}
           <h1 className="text-5xl md:text-6xl font-semibold leading-tight mb-6 text-white">
             Meeting the Energy Needs for <br />
@@ -35,8 +38,8 @@ const Home = () => {
 
           {/* Subtext */}
           <p className="text-white text-lg max-w-3xl mx-auto mb-10">
-            GreenRaven supports the energy production industry as a central hub
-            — specializing in commercial solar, geothermal systems, generators,
+            GreenRaven supports the energy production industry as a central hub —
+            specializing in commercial solar, geothermal systems, generators,
             and advanced power solutions.
           </p>
 
@@ -59,17 +62,20 @@ const Home = () => {
           </div>
 
           <div>
-            <h3 className="text-[20px] text-white font-semibold my-4">
+            <h3 className='text-[20px] text-white font-semibold my-4'>
               We help customers execute projects by providing:
             </h3>
             <FloatingCards />
           </div>
-        </div>
-      </section>
 
-      <ResidentialEnergySection />
+        </div>
+      </article>
 
       <SalesStorySection />
+
+      <Hardware />
+
+      <ResidentialEnergySection />
 
       <CommercialEnergySection />
 
@@ -77,8 +83,8 @@ const Home = () => {
 
       <GeothermalSolutions />
 
-      <Hardware />
-    </div>
+      
+    </section>
   );
 };
 

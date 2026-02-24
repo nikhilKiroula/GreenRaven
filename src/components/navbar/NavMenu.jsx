@@ -20,9 +20,8 @@ const NavMenu = () => {
       <NavLink to="/product_and_services" className={linkClass}>
         Products & Services
       </NavLink>
-
-      <NavLink to="/gallery" className={linkClass}>
-        Gallery
+      <NavLink to="/get_quote" className={linkClass}>
+        Get Quote
       </NavLink>
 
       <NavLink to="/partners" className={linkClass}>
@@ -31,6 +30,9 @@ const NavMenu = () => {
 
       <NavLink to="/contact" className={linkClass}>
         Contact Us
+      </NavLink>
+      <NavLink to="/financing" className={linkClass}>
+        Financing
       </NavLink>
     </nav>
   );
