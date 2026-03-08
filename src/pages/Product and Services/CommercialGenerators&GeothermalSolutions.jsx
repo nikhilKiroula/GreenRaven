@@ -1,13 +1,13 @@
 import React from "react";
+import topImg1 from "../../assets/images/200 kW Cummins Diesel Generator.jpg";
+import topImg2 from "../../assets/images/250 kW Volvo Diesel Generator.jpg";
+import Img1 from "../../assets/images/Generac 50 kW Diesel Generator.webp";
 
-const PermitReady = () => {
+const CommercialGeneratorsAndGeothermalSolutions = () => {
   const images = {
-    topSmall1:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
-    topSmall2:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
-    bottomLarge:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
+    topSmall1: topImg1,
+    topSmall2: topImg2,
+    bottomLarge: Img1,
   };
 
   return (
@@ -38,16 +38,16 @@ const PermitReady = () => {
             </svg>
           </div>
           <span className="text-[13px] font-bold tracking-[0.25em] text-[#1e293b] uppercase">
-            Engineering Services
+            Commercial Power Alternatives
           </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 items-start ">
           <div className="flex flex-col space-y-10">
-            <div className="mt-10 lg:pl-10">
-              <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold text-[#1e293b] leading-[1.1] tracking-tight">
-                Permit-Ready <br />
-                <span className="text-[#22c55e]">Design & Engineering</span>
+            <div className="mt-10">
+              <h1 className="whitespace-nowrap text-4xl md:text-5xl lg:text-[56px] font-extrabold text-[#1e293b] leading-[1.1] tracking-tight">
+                Commercial Generators <br />
+                <span className="text-[#22c55e]">& Geothermal Solutions</span>
               </h1>
             </div>
 
@@ -55,7 +55,7 @@ const PermitReady = () => {
               <img
                 src={images.bottomLarge}
                 alt="Modern office workplace"
-                className="absolute inset-0 w-full h-full object-cover rounded-[32px] shadow-sm"
+                className="absolute inset-0 w-full h-full object-contain rounded-[32px] shadow-sm"
               />
             </div>
           </div>
@@ -80,34 +80,34 @@ const PermitReady = () => {
 
             <div className="flex flex-col space-y-5 text-left pt-4">
               <p className="text-gray-600 text-[18px] leading-relaxed ">
-                We do not just create blueprints; we solve complex energy
-                challenges. Our engineering team delivers permit-ready designs
-                that ensure your project moves from concept to construction
-                without delays.
+                When space is a constraint, power should not be. We provide
+                advanced alternative energy solutions for commercial clients who
+                lack the footprint for traditional solar arrays.
               </p>
 
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
-                    Rapid Turnaround: Highly accurate engineering services
-                    designed to fast-track commercial solar project timelines.
+                    Space-Efficient Power: High-capacity generators and
+                    geothermal products designed to meet heavy energy demands in
+                    compact environments.
                   </span>
                 </li>
                 <li className="flex items-center">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
-                    Solving the Impossible: We have successfully tackled and
-                    delivered projects that the largest solar companies in the
-                    world deemed impossible.
+                    Geothermal Expertise: Leveraging ground-source energy to
+                    provide consistent, high-efficiency heating and cooling
+                    where rooftop solar is not an option.
                   </span>
                 </li>
                 <li className="flex items-center">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
-                    End-to-End Support: We are more than just an engineering
-                    firm. We provide continuous technical support and clear
-                    communication throughout your project&apos;s lifecycle.
+                    Customer-Centric Reliability: We equip you with the hardware
+                    needed to ensure your clients' energy needs are met, no
+                    matter the site limitations.
                   </span>
                 </li>
               </ul>
@@ -119,4 +119,4 @@ const PermitReady = () => {
   );
 };
 
-export default PermitReady;
+export default CommercialGeneratorsAndGeothermalSolutions;

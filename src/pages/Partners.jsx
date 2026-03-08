@@ -1,17 +1,115 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Partner = () => {
+  const [userApplicationData, setUserApplication] = useState({
+    businessTypes: [],
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    companyName: "",
+    streetAddress: "",
+    city: "",
+    state: "",
+    postalCode: "",
+  });
+
+  const US_STATES = [
+    { code: "AL", name: "Alabama" },
+    { code: "AK", name: "Alaska" },
+    { code: "AZ", name: "Arizona" },
+    { code: "AR", name: "Arkansas" },
+    { code: "CA", name: "California" },
+    { code: "CO", name: "Colorado" },
+    { code: "CT", name: "Connecticut" },
+    { code: "DE", name: "Delaware" },
+    { code: "FL", name: "Florida" },
+    { code: "GA", name: "Georgia" },
+    { code: "HI", name: "Hawaii" },
+    { code: "ID", name: "Idaho" },
+    { code: "IL", name: "Illinois" },
+    { code: "IN", name: "Indiana" },
+    { code: "IA", name: "Iowa" },
+    { code: "KS", name: "Kansas" },
+    { code: "KY", name: "Kentucky" },
+    { code: "LA", name: "Louisiana" },
+    { code: "ME", name: "Maine" },
+    { code: "MD", name: "Maryland" },
+    { code: "MA", name: "Massachusetts" },
+    { code: "MI", name: "Michigan" },
+    { code: "MN", name: "Minnesota" },
+    { code: "MS", name: "Mississippi" },
+    { code: "MO", name: "Missouri" },
+    { code: "MT", name: "Montana" },
+    { code: "NE", name: "Nebraska" },
+    { code: "NV", name: "Nevada" },
+    { code: "NH", name: "New Hampshire" },
+    { code: "NJ", name: "New Jersey" },
+    { code: "NM", name: "New Mexico" },
+    { code: "NY", name: "New York" },
+    { code: "NC", name: "North Carolina" },
+    { code: "ND", name: "North Dakota" },
+    { code: "OH", name: "Ohio" },
+    { code: "OK", name: "Oklahoma" },
+    { code: "OR", name: "Oregon" },
+    { code: "PA", name: "Pennsylvania" },
+    { code: "RI", name: "Rhode Island" },
+    { code: "SC", name: "South Carolina" },
+    { code: "SD", name: "South Dakota" },
+    { code: "TN", name: "Tennessee" },
+    { code: "TX", name: "Texas" },
+    { code: "UT", name: "Utah" },
+    { code: "VT", name: "Vermont" },
+    { code: "VA", name: "Virginia" },
+    { code: "WA", name: "Washington" },
+    { code: "WV", name: "West Virginia" },
+    { code: "WI", name: "Wisconsin" },
+    { code: "WY", name: "Wyoming" },
+  ];
+
+  const resetForm = () => {
+    setUserApplication({
+      businessTypes: [],
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      companyName: "",
+      streetAddress: "",
+      city: "",
+      state: "",
+      postalCode: "",
+    });
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "29b9f208-ddb8-4b75-afe3-7676e0c13aeb");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      resetForm();
+      toast.success("ho gya");
+    } catch (error) {
+      toast.error("Applicaition not ");
+    }
+  };
   return (
-    <div className="container mx-auto px-10 py-8 lg:py-16 mt-15">
+    <div className="container mx-auto px-4 py-8 lg:py-16 mt-15">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
         {/* Left Column */}
         <div className="lg:w-1/2 flex flex-col relative">
           <div className="z-10 bg-white">
-            <h1 className="text-4xl lg:text-5xl font-semibold text-slate-800 mb-2">
-              <span className="text-green-600">Green </span>
-              Raven
+            <h1 className="text-4xl lg:text-5xl font-light text-slate-800 mb-2">
+              Green Raven
             </h1>
-            <h1 className="text-4xl lg:text-5xl font-semibold text-slate-800 mb-6">
+            <h1 className="text-4xl lg:text-5xl font-light text-slate-800 mb-6">
               Partner Program
             </h1>
             <div className="w-16 h-1 bg-green-600 mb-8"></div>
@@ -88,187 +186,119 @@ const Partner = () => {
         </div>
 
         {/* Right Column - Form */}
-        <div className="lg:w-1/2 bg-[#0a1128] text-white p-8 lg:p-12 shadow-xl">
-          <h2 className="text-2xl lg:text-3xl font-light mb-8">
-            Become a Partner Installer
-          </h2>
+        <div className="container mx-auto px-4 py-8">
+          <div className="max-w-2xl mx-auto bg-[#0a1128] text-white p-8 shadow-xl">
+            <h2 className="text-2xl font-light mb-8">
+              Become a Partner Installer
+            </h2>
 
-          <form className="space-y-6">
-            <div>
-              <label className="block text-sm mb-3">
-                Business Type <span className="text-green-500">*</span>
-              </label>
-              <div className="space-y-2">
-                <label className="flex items-start gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="mt-1 w-4 h-4 rounded border-gray-300 accent-green-600"
-                  />
-                  <span className="text-sm font-light">
-                    Solar Installation Services
-                  </span>
-                </label>
-                <label className="flex items-start gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="mt-1 w-4 h-4 rounded border-gray-300 accent-green-600"
-                  />
-                  <span className="text-sm font-light">
-                    Commercial Generators
-                  </span>
-                </label>
-                <label className="flex items-start gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="mt-1 w-4 h-4 rounded border-gray-300 accent-green-600"
-                  />
-                  <span className="text-sm font-light">
-                    Geothermal Solutions
-                  </span>
-                </label>
-                <label className="flex items-start gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="mt-1 w-4 h-4 rounded border-gray-300 accent-green-600"
-                  />
-                  <span className="text-sm font-light">
-                    Sales Org / Project Financing
-                  </span>
-                </label>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <form onSubmit={onSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm mb-1">
-                  First name <span className="text-green-500">*</span>
+                <label className="block text-sm mb-3">
+                  Business Type <span className="text-green-500">*</span>
                 </label>
+
+                {[
+                  "Solar Installation Services",
+                  "Commercial Generators",
+                  "Geothermal Solutions",
+                  "Sales Org / Project Financing",
+                ].map((type) => (
+                  <label
+                    key={type}
+                    className="flex items-start gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      value={type}
+                      className="mt-1 w-4 h-4 accent-green-600"
+                    />
+                    <span className="text-sm font-light">{type}</span>
+                  </label>
+                ))}
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <input
                   type="text"
-                  className="w-full bg-slate-300/80 h-10 px-3 text-slate-900 border-none outline-none focus:ring-1 focus:ring-slate-400"
+                  name="firstName"
+                  placeholder="First Name *"
+                  className="w-full bg-slate-300/80 h-10 px-3 text-black"
                 />
-              </div>
-              <div>
-                <label className="block text-sm mb-1">
-                  Last name <span className="text-green-500">*</span>
-                </label>
                 <input
                   type="text"
-                  className="w-full bg-slate-300/80 h-10 px-3 text-slate-900 border-none outline-none focus:ring-1 focus:ring-slate-400"
+                  name="lastName"
+                  placeholder="Last Name"
+                  className="w-full bg-slate-300/80 h-10 px-3 text-black"
                 />
               </div>
-            </div>
 
-            <div>
-              <label className="block text-sm mb-1">
-                Email <span className="text-green-500">*</span>
-              </label>
               <input
                 type="email"
-                className="w-full bg-slate-300/80 h-10 px-3 text-slate-900 border-none outline-none focus:ring-1 focus:ring-slate-400"
+                name="email"
+                placeholder="Email *"
+                className="w-full bg-slate-300/80 h-10 px-3 text-black"
               />
-            </div>
 
-            <div>
-              <label className="block text-sm mb-1">
-                Phone number <span className="text-green-500">*</span>
-              </label>
               <input
                 type="tel"
-                className="w-full bg-slate-300/80 h-10 px-3 text-slate-900 border-none outline-none focus:ring-1 focus:ring-slate-400"
+                name="phone"
+                placeholder="Phone"
+                className="w-full bg-slate-300/80 h-10 px-3 text-black"
               />
-            </div>
 
-            <div>
-              <label className="block text-sm mb-1">
-                Company name <span className="text-green-500">*</span>
-              </label>
               <input
                 type="text"
-                className="w-full bg-slate-300/80 h-10 px-3 text-slate-900 border-none outline-none focus:ring-1 focus:ring-slate-400"
+                name="companyName"
+                placeholder="Company Name"
+                className="w-full bg-slate-300/80 h-10 px-3 text-black"
               />
-            </div>
 
-            <div>
-              <label className="block text-sm mb-1">
-                Street address <span className="text-green-500">*</span>
-              </label>
               <input
                 type="text"
-                className="w-full bg-slate-300/80 h-10 px-3 text-slate-900 border-none outline-none focus:ring-1 focus:ring-slate-400"
+                name="streetAddress"
+                placeholder="Street Address"
+                className="w-full bg-slate-300/80 h-10 px-3 text-black"
               />
-            </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <input
+                type="text"
+                name="city"
+                placeholder="City"
+                className="w-full bg-slate-300/80 h-10 px-3 text-black"
+              />
+
               <div>
-                <label className="block text-sm mb-1">
-                  City <span className="text-green-500">*</span>
-                </label>
                 <input
                   type="text"
-                  className="w-full bg-slate-300/80 h-10 px-3 text-slate-900 border-none outline-none focus:ring-1 focus:ring-slate-400"
+                  name="state"
+                  list="us-states"
+                  placeholder="State"
+                  className="w-full bg-slate-300/80 h-10 px-3 text-black"
                 />
-              </div>
-              <div>
-                <label className="block text-sm mb-1">
-                  State/Region <span className="text-green-500">*</span>
-                </label>
-                <div className="relative">
-                  <select className="w-full bg-slate-300/80 h-10 px-3 text-slate-700 border-none outline-none focus:ring-1 focus:ring-slate-400 appearance-none">
-                    <option value="">Please Select</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    {/* Add more states as needed */}
-                  </select>
-                  <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-600">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div>
-              <label className="block text-sm mb-1">
-                Postal code <span className="text-green-500">*</span>
-              </label>
+                <datalist id="us-states">
+                  {US_STATES.map((state) => (
+                    <option key={state.code} value={state.name} />
+                  ))}
+                </datalist>
+              </div>
+
               <input
                 type="text"
-                className="w-full bg-slate-300/80 h-10 px-3 text-slate-900 border-none outline-none focus:ring-1 focus:ring-slate-400"
+                name="postalCode"
+                placeholder="Postal Code"
+                className="w-full bg-slate-300/80 h-10 px-3 text-black"
               />
-            </div>
 
-            <div className="pt-4 flex flex-col gap-4">
               <button
                 type="submit"
-                className="bg-green-600 hover:bg-green-700 cursor-pointer text-white px-8 py-3 font-medium transition-colors w-full lg:w-auto text-center"
+                className="bg-green-600 text-white px-8 py-3 w-full"
               >
                 Submit Application
               </button>
-              <a
-                href="https://calendar.app.google/9qsvNemHcAkYwesn9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-center lg:text-left text-gray-300 hover:text-white underline"
-              >
-                Or schedule a time directly via Calendar
-              </a>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>

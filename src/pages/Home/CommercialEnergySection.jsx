@@ -15,7 +15,7 @@ const CommercialEnergySection = () => {
         <div className="absolute bottom-[-28px] left-8 bg-white shadow-lg flex items-center gap-3 px-6 py-4 border-b-4 border-emerald-600">
           <span className="text-emerald-600 text-xl">🏢</span>
           <span className="uppercase tracking-widest text-sm font-semibold text-gray-700">
-            Commercial
+            Commercial Engineering
           </span>
         </div>
       </div>
@@ -23,61 +23,56 @@ const CommercialEnergySection = () => {
       {/* Content Section */}
       <div className="max-w-7xl mx-auto px-6 pt-20 pb-16 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left */}
-    <div>
+        <div>
           <h2 className="text-4xl md:text-5xl font-light leading-tight tracking-tight py-5">
-  Permit-Ready<br />
-  <span className="font-medium">
-    Commercial Engineering
-  </span>
-</h2>
-<p>
-    We provide accurate, permit-ready engineering designs to ensure your
-    projects move from concept to approval without delays. Our team works
-    closely with installers, AHJs, and utility providers to deliver
-    documentation that meets compliance standards the first time.
-  </p>
-    </div>
+            Permit-Ready
+            <br />
+            <span className="font-medium">Commercial Engineering</span>
+          </h2>
+          <p>
+            We provide accurate, permit-ready engineering designs to ensure your
+            projects move from concept to approval without delays. Our team
+            works closely with installers, AHJs, and utility providers to
+            deliver documentation that meets compliance standards the first
+            time.
+          </p>
+        </div>
 
         {/* Right */}
         <div className="text-gray-600 text-lg leading-relaxed space-y-6">
+          <p>
+            From commercial solar layouts to structural calculations and
+            electrical single-line diagrams, we eliminate costly revisions and
+            streamline the permitting process so your projects stay on schedule.
+          </p>
 
-  
+          <ul className="space-y-3 pt-2">
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+              Fast turnaround times to prevent project bottlenecks
+            </li>
 
-  <p>
-    From commercial solar layouts to structural calculations and electrical
-    single-line diagrams, we eliminate costly revisions and streamline
-    the permitting process so your projects stay on schedule.
-  </p>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+              Highly accurate, code-compliant structural and electrical designs
+            </li>
 
-  <ul className="space-y-3 pt-2">
-    <li className="flex items-start gap-3">
-      <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-      Fast turnaround times to prevent project bottlenecks
-    </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+              Utility & AHJ-ready documentation prepared for smooth approvals
+            </li>
 
-    <li className="flex items-start gap-3">
-      <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-      Highly accurate, code-compliant structural and electrical designs
-    </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+              Professional engineering stamps where required
+            </li>
 
-    <li className="flex items-start gap-3">
-      <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-      Utility & AHJ-ready documentation prepared for smooth approvals
-    </li>
-
-    <li className="flex items-start gap-3">
-      <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-      Professional engineering stamps where required
-    </li>
-
-    <li className="flex items-start gap-3">
-      <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
-      Ongoing revision support to resolve jurisdiction feedback
-    </li>
-  </ul>
-
-</div>
-
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 bg-green-600 rounded-full mt-2"></span>
+              Ongoing revision support to resolve jurisdiction feedback
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

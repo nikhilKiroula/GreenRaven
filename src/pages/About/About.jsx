@@ -5,7 +5,7 @@ import HowWeWork from "./HowWeWork";
 
 const About = () => {
   return (
-    <main className="w-full overflow-x-hidden pt-10 bg-[#eee] mt-18 ">
+    <main className="w-full overflow-x-hidden pt-10 bg-black/20 mt-18 ">
     
       {/* ================= HERO ================= */}
       <section className="w-full">

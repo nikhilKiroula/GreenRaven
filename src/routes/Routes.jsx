@@ -7,8 +7,9 @@ import Partners from "../pages/Partners";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import MainProductServices from "../pages/Product and Services/MainProductsServices"
-import Financing from "../pages/Financing";
+import Financing from "../pages/Financing/Financing";
 import GetQuote from "../pages/GetQuote";
+import TermsOfUse from "../pages/TermsOfUse";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "contact", element: <Contact /> },
       { path: "product_and_services", element: <MainProductServices /> },
       { path: "get_quote", element: <GetQuote /> },
+      { path: "terms-of-use", element: <TermsOfUse /> },
     ],
   },
 ]);

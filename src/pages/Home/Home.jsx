@@ -39,7 +39,7 @@ const Home = () => {
           {/* Subtext */}
           <p className="text-white text-lg max-w-3xl mx-auto mb-10">
             GreenRaven supports the energy production industry as a central hub —
-            specializing in commercial solar, geothermal systems, generators,
+            specializing in residential solar, commercial solar, geothermal systems, generators,
             and advanced power solutions.
           </p>
 
@@ -79,7 +79,7 @@ const Home = () => {
 
       <CommercialEnergySection />
 
-      <InstallerPartenerNetwork />
+      {/* <InstallerPartenerNetwork /> */}
 
       <GeothermalSolutions />
 

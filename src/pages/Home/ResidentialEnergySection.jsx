@@ -37,7 +37,7 @@ const ResidentialEnergySection = () => {
           <ul className="list-disc marker:text-green-600 pl-6 space-y-2">
             <li>Access residential PPA’s regardless of your company sales volume.</li>
             <li>Access commercial PPA’s, even for small system sizes.</li>
-            <li>SUnique finance access for otherwise “impossible” to finance projects</li>
+            <li>Unique finance access for otherwise “impossible” to finance projects</li>
           </ul>
         </div>
       </div>
