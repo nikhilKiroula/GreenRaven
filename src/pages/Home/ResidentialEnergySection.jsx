@@ -12,7 +12,7 @@ const ResidentialEnergySection = () => {
         />
 
         {/* Category Label */}
-        <div className="absolute bottom-[-28px] left-8 bg-white shadow-lg flex items-center gap-3 px-6 py-4 border-b-4 border-green-600">
+        <div className="absolute bottom-[-28px] rounded-md left-8 bg-white shadow-lg flex items-center gap-3 px-6 py-4 border-b-4 border-green-600">
           <span className="text-green-600 text-xl">🏡</span>
           <span className="uppercase tracking-widest text-sm font-semibold text-gray-700">
             Financial Tools

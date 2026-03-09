@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+
 import toast from "react-hot-toast";
 
 const Partner = () => {
@@ -95,22 +95,22 @@ const Partner = () => {
         body: formData,
       });
       resetForm();
-      toast.success("ho gya");
+      toast.success("Application Submitted Successfully!");
     } catch (error) {
-      toast.error("Applicaition not ");
+      toast.error("Failed to submit Applicaition! ");
     }
   };
   return (
     <div className="container mx-auto px-4 py-8 lg:py-16 mt-15">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
         {/* Left Column */}
-        <div className="lg:w-1/2 flex flex-col relative">
+        <div className="lg:w-1/2 flex flex-col relative px-4">
           <div className="z-10 bg-white">
-            <h1 className="text-4xl lg:text-5xl font-light text-slate-800 mb-2">
+            <h1 className="text-4xl lg:text-5xl font-semibold text-green-600 mb-2">
               Green Raven
             </h1>
-            <h1 className="text-4xl lg:text-5xl font-light text-slate-800 mb-6">
-              Partner Program
+            <h1 className="text-4xl lg:text-5xl font-semibold text-slate-800 mb-6">
+              Partner Ecosystem
             </h1>
             <div className="w-16 h-1 bg-green-600 mb-8"></div>
 
@@ -151,7 +151,7 @@ const Partner = () => {
             </p>
 
             <h3 className="font-bold text-slate-700 mb-4">
-              Program Highlights
+              The Green Raven Ecosystem
             </h3>
 
             <div className="flex flex-col gap-2 mb-12">
@@ -161,15 +161,23 @@ const Partner = () => {
               </div>
               <div className="flex items-center gap-2 text-slate-700">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-600"></span>
-                <span>Nationwide U.S. Shipping</span>
+                <span>Access projects needing installation support</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-600"></span>
-                <span>Commercial & Residential Installations Supported</span>
+                <span>Get finance tools via our other partners</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-600"></span>
-                <span>Installer-Only Distribution</span>
+                <span>Access to sales organizations</span>
+              </div>
+              <div className="flex items-center gap-2 text-slate-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-600"></span>
+                <span>Tackling difficult commercial design issues</span>
+              </div>
+              <div className="flex items-center gap-2 text-slate-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-600"></span>
+                <span>Find unique products for unique situations</span>
               </div>
             </div>
           </div>

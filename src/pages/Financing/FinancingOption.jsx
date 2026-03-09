@@ -3,15 +3,16 @@ import { useState } from "react";
 
 /**
  * Financing Options Component
- * Design: Modern Professional - Three column grid with hover effects
- * Features: Interactive cards with gradient backgrounds on hover
+ * Updated: Invoice description simplified, Purchase Order → Line of Credit,
+ * Three separate buttons merged into one shared "Learn More" button linking to fundwell.com
  */
 
 const financingOptions = [
   {
     icon: "📊",
     title: "Invoice Financing",
-    description: "Get immediate cash flow by financing your outstanding invoices",
+    // ✅ Updated description
+    description: "Get paid in advance on your outstanding accounts receivables for quick cash flow",
     features: ["Fast funding", "Flexible terms", "No hidden fees"]
   },
   {
@@ -21,10 +22,11 @@ const financingOptions = [
     features: ["Competitive rates", "Quick approval", "Expert support"]
   },
   {
+    // ✅ Updated: Purchase Order Financing → Line of Credit
     icon: "🎯",
-    title: "Purchase Order Financing",
-    description: "Finance your purchase orders and scale your operations",
-    features: ["Working capital", "Growth focused", "Transparent pricing"]
+    title: "Line of Credit",
+    description: "Finance your Green Raven invoices (and more) to scale your operations",
+    features: ["Working capital", "Up to $1M line of credit", "No liens on your customer's property"]
   }
 ];
 
@@ -81,14 +83,6 @@ export default function FinancingOptions() {
                     </div>
                   ))}
                 </div>
-
-                {/* CTA Button */}
-                <button 
-                  className="w-full mt-6 bg-green-600 hover:bg-green-700 text-white group-hover:shadow-lg transition-all font-semibold py-3 rounded-lg flex items-center justify-center gap-2"
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4" />
-                </button>
               </div>
 
               {/* Top Border Accent */}
@@ -97,6 +91,19 @@ export default function FinancingOptions() {
               ></div>
             </div>
           ))}
+        </div>
+
+        {/* ✅ Single shared "Learn More" button linking to fundwell.com */}
+        <div className="flex justify-center mt-10">
+          <a
+            href="https://www.fundwell.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-10 rounded-lg flex items-center gap-2 transition-all hover:shadow-lg"
+          >
+            Learn More
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>

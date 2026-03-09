@@ -11,8 +11,8 @@ const StrategicBusinessServices = () => {
   };
 
   return (
-    <section className="bg-white py-12 px-4 sm:px-6 lg:px-8 font-sans">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white py-12 font-sans">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="inline-flex items-center gap-4 bg-white px-6 py-5 shadow-xl relative mb-10">
           <div className="absolute bottom-0 left-0 w-full h-[3px] bg-[#22c55e]"></div>
           <div className="relative w-7 h-7 flex-shrink-0">
@@ -44,7 +44,7 @@ const StrategicBusinessServices = () => {
 
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 items-start ">
           <div className="flex flex-col space-y-10">
-            <div className="mt-10 lg:pl-10">
+            <div className="pt-10">
               <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold text-[#1e293b] leading-[1.1] tracking-tight">
                 Strategic <br />
                 <span className="text-[#22c55e]">Business Services</span>
@@ -86,7 +86,7 @@ const StrategicBusinessServices = () => {
               </p>
 
               <ul className="space-y-3">
-                <li className="flex items-center">
+                <li className="flex items-start">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
                     Solar-Specific Software: Custom CRM and tracking solutions
@@ -94,14 +94,14 @@ const StrategicBusinessServices = () => {
                     pipelines.
                   </span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-start">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
                     Process Automation: Expert consulting to optimize your sales
                     funnel and automate repetitive tasks for maximum efficiency.
                   </span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-start">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
                     Strategic Networking: We bridge the gap between sales

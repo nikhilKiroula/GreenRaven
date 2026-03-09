@@ -2,8 +2,8 @@ import { ArrowRight } from "lucide-react";
 
 /**
  * CTA Section Component
- * Design: Modern Professional - Full-width gradient background with strong call-to-action
- * Colors: Blue-700 to Emerald-600 gradient
+ * Updated: "Get Your Price Quote" → links to /get-quote
+ *          "Contact Sales" → links to /contact
  */
 
 export default function CTASection() {
@@ -24,20 +24,22 @@ export default function CTASection() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
           
-          {/* Primary Button */}
-          <button
+          {/* ✅ Primary Button — links to Get Quote page */}
+          <a
+            href="/get_quote"
             className="inline-flex items-center justify-center bg-white text-green-700 hover:bg-slate-100 text-base px-8 py-3 rounded-lg font-semibold transition-all hover:shadow-lg"
           >
             Get Your Price Quote
             <ArrowRight className="ml-2 w-5 h-5" />
-          </button>
+          </a>
 
-          {/* Secondary Button */}
-          <button
+          {/* ✅ Secondary Button — links to Contact Us page */}
+          <a
+            href="/contact"
             className="inline-flex items-center justify-center border border-white text-white hover:bg-white/10 text-base px-8 py-3 rounded-lg font-semibold transition-all"
           >
             Contact Sales
-          </button>
+          </a>
 
         </div>
       </div>

@@ -5,18 +5,22 @@ const InstallerPartenerNetwork = () => {
   return (
     <section className=" py-8    px-6">
       <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 items-start">
+
         {/* LEFT SIDE */}
         <div>
-          {/* Big Heading */}
-          <h2 className="text-4xl md:text-5xl text-green-600 font-bold leading-[1.15] mb-6 tracking-tight">
-            Installers
-          </h2>
 
-          <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-xl">
-            Join our premier installer partner network and gain access to
-            qualified projects, nationwide opportunities, and strategic growth
-            support designed to scale your business.
-          </p>
+          {/* Big Heading */}
+<h2 className="text-4xl md:text-5xl text-green-600 font-bold leading-[1.15] mb-6 tracking-tight">
+  Installers
+</h2>
+
+<p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-xl">
+  Join our premier installer partner network and gain access to qualified
+  projects, nationwide opportunities, and strategic growth support designed
+  to scale your business.
+</p>
+
+
 
           {/* Large Image */}
           <div className="rounded-2xl overflow-hidden">
@@ -30,6 +34,7 @@ const InstallerPartenerNetwork = () => {
 
         {/* RIGHT SIDE */}
         <div className="space-y-8">
+
           {/* Top Small Images */}
           <div className="grid grid-cols-2 gap-6">
             <div className="rounded-xl overflow-hidden">
@@ -50,27 +55,42 @@ const InstallerPartenerNetwork = () => {
 
           {/* Description */}
           <div>
-            <h3 className="text-3xl font-semibold text-green-600 my-4">
-              {" "}
-              Prevalling Wage Consulting
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Ensure Davis-Bacon compliance and certified payroll reporting
-              confidence for your public works projects.
-            </p>
+            <h3 className="text-3xl font-semibold text-green-600 my-4"> Prevalling Wage Consulting</h3>
+<p className="text-gray-700 leading-relaxed">
+
+Ensure Davis-Bacon compliance and certified payroll reporting confidence for your public works projects.
+</p>
           </div>
 
-          {/* Feature List */}
-          <ul className="space-y-3 list-disc marker:text-green-600 text-gray-600 ">
-            <li className="">Nationwide shipping at volume pricing</li>
+{/* Feature List */}
+<ul className="space-y-3 list-disc marker:text-green-600 text-gray-600 ">
+  <li className="">
+    
+    Nationwide shipping at volume pricing
+  </li>
 
-            <li className="">Trusted US and international suppliers</li>
-            <li className="">Nationwide installer partner network</li>
+  
 
-            <li className="">Project matchmaking services</li>
+  <li className="">
+    
+    Trusted US and international suppliers
+  </li>
+  <li className="">
+    
+    Nationwide installer partner network
+  </li>
 
-            <li className="">Volume pricing and exclusive access</li>
-          </ul>
+  <li className="">
+    
+    Project matchmaking services
+  </li>
+
+  <li className="">
+    
+    Volume pricing and exclusive access
+  </li>
+</ul>
+
         </div>
       </div>
     </section>

@@ -11,8 +11,8 @@ const PermitReady = () => {
   };
 
   return (
-    <section className="bg-white py-12 px-4 sm:px-6 lg:px-8 font-sans">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white py-12 font-sans">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="inline-flex items-center gap-4 bg-white px-6 py-5 shadow-xl relative mb-10">
           <div className="absolute bottom-0 left-0 w-full h-[3px] bg-[#22c55e]"></div>
           <div className="relative w-7 h-7 flex-shrink-0">
@@ -44,7 +44,7 @@ const PermitReady = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 items-start">
           <div className="flex flex-col space-y-10">
-            <div className="mt-10 lg:pl-10">
+            <div className="pt-10">
               <h1 className="text-4xl md:text-5xl lg:text-[56px] font-extrabold text-[#1e293b] leading-[1.1] tracking-tight">
                 Permit-Ready <br />
                 <span className="text-[#22c55e]">Design & Engineering</span>
@@ -87,14 +87,14 @@ const PermitReady = () => {
               </p>
 
               <ul className="space-y-3">
-                <li className="flex items-center">
+                <li className="flex items-start">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
                     Rapid Turnaround: Highly accurate engineering services
                     designed to fast-track commercial solar project timelines.
                   </span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-start">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
                     Solving the Impossible: We have successfully tackled and
@@ -102,7 +102,7 @@ const PermitReady = () => {
                     world deemed impossible.
                   </span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-start">
                   <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
                   <span className="text-[#1e293b] text-lg font-medium">
                     End-to-End Support: We are more than just an engineering

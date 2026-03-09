@@ -79,7 +79,7 @@ const Home = () => {
 
       <CommercialEnergySection />
 
-      {/* <InstallerPartenerNetwork /> */}
+      
 
       <GeothermalSolutions />
 
