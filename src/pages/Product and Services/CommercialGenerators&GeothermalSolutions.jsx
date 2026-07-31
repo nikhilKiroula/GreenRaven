@@ -90,25 +90,25 @@ const CommercialGeneratorsAndGeothermalSolutions = () => {
               </p>
 
               <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     Space-Efficient Power: High-capacity generators and
                     geothermal products designed to meet heavy energy demands in
                     compact environments.
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     Geothermal Expertise: Leveraging ground-source energy to
                     provide consistent, high-efficiency heating and cooling
                     where rooftop solar is not an option.
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     Customer-Centric Reliability: We equip you with the hardware
                     needed to ensure your clients' energy needs are met, no
                     matter the site limitations.

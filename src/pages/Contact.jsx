@@ -8,7 +8,7 @@ const Contact = () => {
                 {/* Left Column - Contact Details */}
                 <div className="lg:w-1/2 flex flex-col relative justify-center">
                     <div className="z-10 bg-white">
-                        <h1 className="text-4xl lg:text-5xl font-semibold text-slate-800 mb-6">
+                        <h1 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
                             <span>Contact </span>
                             <span className='text-green-600'>Us</span>
                              
@@ -16,9 +16,15 @@ const Contact = () => {
                         <div className="w-16 h-1 bg-green-600 mb-10"></div>
 
                         <div className="text-slate-600 mb-8 leading-relaxed space-y-8">
+                            
+                            <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
+                                <p className="text-lg leading-relaxed">
+                                    You may reach us at <a href="mailto:info@gogreenraven.com" className="text-green-700 underline decoration-green-300 hover:text-green-800 font-medium">info@gogreenraven.com</a> or <a href="https://calendar.app.google/9qsvNemHcAkYwesn9" target="_blank" rel="noopener noreferrer" className="text-green-700 underline decoration-green-300 hover:text-green-800 font-medium">click here</a> to schedule a call with our staff.
+                                </p>
+                            </div>
                             <div>
                                 <p className="text-xl mb-4 font-light text-slate-800">
-                                    You may contact us by email or phone at:
+                                    We can also be reached at the following address:
                                 </p>
                                 
                                 <address className="not-italic text-slate-700 text-lg border-l-4 border-slate-200 pl-6 py-2">
@@ -28,11 +34,6 @@ const Contact = () => {
                                 </address>
                             </div>
 
-                            <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
-                                <p className="text-lg leading-relaxed">
-                                    Or better yet, please email us at <a href="mailto:info@gogreenraven.com" className="text-green-700 underline decoration-green-300 hover:text-green-800 font-medium">info@gogreenraven.com</a> or <a href="https://calendar.app.google/9qsvNemHcAkYwesn9" target="_blank" rel="noopener noreferrer" className="text-green-700 underline decoration-green-300 hover:text-green-800 font-medium">click here</a> to schedule a call with our staff.
-                                </p>
-                            </div>
                         </div>
                     </div>
 

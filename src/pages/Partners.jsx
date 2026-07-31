@@ -1,20 +1,9 @@
 import React, { useState } from "react";
-
 import toast from "react-hot-toast";
 
 const Partner = () => {
-  const [userApplicationData, setUserApplication] = useState({
-    businessTypes: [],
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    companyName: "",
-    streetAddress: "",
-    city: "",
-    state: "",
-    postalCode: "",
-  });
+
+  const [loading, setLoading] = useState(false);
 
   const US_STATES = [
     { code: "AL", name: "Alabama" },
@@ -69,41 +58,47 @@ const Partner = () => {
     { code: "WY", name: "Wyoming" },
   ];
 
-  const resetForm = () => {
-    setUserApplication({
-      businessTypes: [],
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      companyName: "",
-      streetAddress: "",
-      city: "",
-      state: "",
-      postalCode: "",
-    });
-  };
-
   const onSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    formData.append("access_key", "29b9f208-ddb8-4b75-afe3-7676e0c13aeb");
+  event.preventDefault();
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
-      resetForm();
+  const form = event.target;
+  const formData = new FormData(form);
+
+  formData.append("access_key", "76c76a88-2c40-48be-bce9-84f33b45f57e");
+
+  try {
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+
       toast.success("Application Submitted Successfully!");
-    } catch (error) {
-      toast.error("Failed to submit Applicaition! ");
+      form.reset();
+
+    } else {
+
+      toast.error(result.message);
+
     }
-  };
+
+  } catch (error) {
+
+    toast.error("Submission failed");
+
+  }
+};
+
   return (
     <div className="container mx-auto px-4 py-8 lg:py-16 mt-15">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
-        {/* Left Column */}
+
+        {/* LEFT SIDE — UNCHANGED */}
+        {/* Your entire left column remains exactly the same */}
         <div className="lg:w-1/2 flex flex-col relative px-4">
           <div className="z-10 bg-white">
             <h1 className="text-4xl lg:text-5xl font-semibold text-green-600 mb-2">
@@ -196,11 +191,17 @@ const Partner = () => {
         {/* Right Column - Form */}
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-2xl mx-auto bg-[#0a1128] text-white p-8 shadow-xl">
+
             <h2 className="text-2xl font-light mb-8">
               Become a Partner Installer
             </h2>
 
             <form onSubmit={onSubmit} className="space-y-6">
+
+              {/* Honeypot anti spam */}
+
+              <input type="hidden" name="botcheck" />
+
               <div>
                 <label className="block text-sm mb-3">
                   Business Type <span className="text-green-500">*</span>
@@ -212,36 +213,37 @@ const Partner = () => {
                   "Geothermal Solutions",
                   "Sales Org / Project Financing",
                 ].map((type) => (
-                  <label
-                    key={type}
-                    className="flex items-start gap-2 cursor-pointer"
-                  >
+                  <label key={type} className="flex items-start gap-2 cursor-pointer">
+
                     <input
                       type="checkbox"
+                      name="businessTypes"
                       value={type}
                       className="mt-1 w-4 h-4 accent-green-600"
                     />
+
                     <span className="text-sm font-light">{type}</span>
+
                   </label>
                 ))}
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="">
+
                 <input
+                  required
                   type="text"
-                  name="firstName"
-                  placeholder="First Name *"
-                  className="w-full bg-slate-300/80 h-10 px-3 text-black"
+                  name="name"
+                  placeholder="Enter your Name *"
+                  className="w-full  bg-slate-300/80 h-10 px-3 text-black"
                 />
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  className="w-full bg-slate-300/80 h-10 px-3 text-black"
-                />
+
+                
+
               </div>
 
               <input
+                required
                 type="email"
                 name="email"
                 placeholder="Email *"
@@ -277,6 +279,7 @@ const Partner = () => {
               />
 
               <div>
+
                 <input
                   type="text"
                   name="state"
@@ -290,6 +293,7 @@ const Partner = () => {
                     <option key={state.code} value={state.name} />
                   ))}
                 </datalist>
+
               </div>
 
               <input
@@ -300,14 +304,18 @@ const Partner = () => {
               />
 
               <button
+                disabled={loading}
                 type="submit"
-                className="bg-green-600 text-white px-8 py-3 w-full"
+                className="bg-green-600 text-white px-8 py-3 w-full cursor-pointer "
               >
-                Submit Application
+                {loading ? "Submitting..." : "Submit Application"}
               </button>
+
             </form>
+
           </div>
         </div>
+
       </div>
     </div>
   );

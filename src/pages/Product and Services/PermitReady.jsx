@@ -87,24 +87,24 @@ const PermitReady = () => {
               </p>
 
               <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     Rapid Turnaround: Highly accurate engineering services
                     designed to fast-track commercial solar project timelines.
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     Solving the Impossible: We have successfully tackled and
                     delivered projects that the largest solar companies in the
                     world deemed impossible.
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     End-to-End Support: We are more than just an engineering
                     firm. We provide continuous technical support and clear
                     communication throughout your project&apos;s lifecycle.

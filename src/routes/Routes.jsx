@@ -11,6 +11,8 @@ import Financing from "../pages/Financing/Financing";
 import GetQuote from "../pages/GetQuote";
 import TermsOfUse from "../pages/TermsOfUse";
 
+import FundwellRedirect from "../pages/Financing/FundwellRedirect";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
       { path: "product_and_services", element: <MainProductServices /> },
       { path: "get_quote", element: <GetQuote /> },
       { path: "terms-of-use", element: <TermsOfUse /> },
+
+      { path: "fundwell/line-of-credit", element: <FundwellRedirect to="https://www.fundwell.com/green-raven?utm_campaign=green-raven&utm_source=sled_referral&utm_medium=channel" /> },
+      { path: "fundwell/learn-more",     element: <FundwellRedirect to="https://www.fundwell.com" /> },
+      { path: "fundwell/how-it-works",   element: <FundwellRedirect to="https://www.fundwell.com" /> },
     ],
   },
 ]);

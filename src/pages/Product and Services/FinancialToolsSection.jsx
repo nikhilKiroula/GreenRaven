@@ -65,24 +65,24 @@ const FinancialToolsSection = () => {
             </p>
 
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                <span className="text-[#1e293b] text-lg font-medium">
+              <li className="flex items-start gap-4">
+                <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                   Flexible PPAs: We offer Commercial PPAs starting as low as 50
                   kW, plus streamlined Residential PPA options with no upfront
                   costs.
                 </span>
               </li>
-              <li className="flex items-start">
-                <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                <span className="text-[#1e293b] text-lg font-medium">
+              <li className="flex items-start gap-4">
+                <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                   Geothermal Solutions: Our high-efficiency geothermal systems
                   also come packaged as a PPA to fit your budget.
                 </span>
               </li>
-              <li className="flex items-start">
-                <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                <span className="text-[#1e293b] text-lg font-medium">
+              <li className="flex items-start gap-4">
+                <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                   Financial Assistance: From navigating tax credits to
                   connecting with capital partners, we provide the expertise to
                   ensure your project&apos;s financial success.

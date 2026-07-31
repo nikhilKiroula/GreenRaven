@@ -1,16 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img1 from "../../assets/images/bernd-dittrich-g-SFUAYL0MY-unsplash.jpg";
+import img2 from "../../assets/images/elevate-GAdkOpqbTfo-unsplash.jpg";
+import img3 from "../../assets/images/newpowa-NT_E4K4-0IM-unsplash.jpg";
 
 const SalesSection = () => {
-  const images = {
-    topSmall1:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
-    topSmall2:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
-    bottomLarge:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
-  };
-
   return (
     <section className="bg-white py-12 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="max-w-7xl mx-auto">
@@ -25,7 +19,7 @@ const SalesSection = () => {
 
             <div className="relative w-full aspect-[4/3] lg:aspect-[1.4/0.9] mt-16">
               <img
-                src={images.bottomLarge}
+                src={img1}
                 alt="Modern office workplace"
                 className="absolute inset-0 w-full h-full object-cover rounded-[32px] shadow-sm"
               />
@@ -36,21 +30,21 @@ const SalesSection = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="aspect-[1.4/1]">
                 <img
-                  src={images.topSmall1}
+                  src={img2}
                   alt="Business collaboration"
                   className="w-full h-full object-cover rounded-2xl shadow-sm"
                 />
               </div>
               <div className="aspect-[1.4/1]">
                 <img
-                  src={images.topSmall2}
+                  src={img3}
                   alt="Team discussion"
                   className="w-full h-full object-cover rounded-2xl shadow-sm"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col space-y-4 text-left">
+            <div className="flex flex-col space-y-4 text-left lg:pt-4">
               <p className="text-gray-600 text-[18px] leading-relaxed">
                 Our core practice is to work directly with US-based and
                 international manufacturers to procure hardware in high volume
@@ -69,7 +63,8 @@ const SalesSection = () => {
                 shipping costs are the lowest in the industry.
               </p>
               <p className="text-[#1e293b] text-[24px] font-semibold leading-tight pt-2 text-center">
-                Reduce your hardware costs <br /> by up to 40% off on your hardware!
+                Reduce your hardware costs <br /> by up to 40% off on your
+                hardware!
               </p>
               <div className="flex justify-center">
                 <Link

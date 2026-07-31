@@ -86,24 +86,24 @@ const StrategicBusinessServices = () => {
               </p>
 
               <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     Solar-Specific Software: Custom CRM and tracking solutions
                     built specifically to manage solar workflows and lead
                     pipelines.
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     Process Automation: Expert consulting to optimize your sales
                     funnel and automate repetitive tasks for maximum efficiency.
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="h-[10px] w-[10px] rounded-full bg-[#22c55e] mr-4 flex-shrink-0"></span>
-                  <span className="text-[#1e293b] text-lg font-medium">
+                <li className="flex items-start gap-4">
+                  <span className="mt-[0.65em] h-[10px] w-[10px] rounded-full bg-[#22c55e] flex-shrink-0"></span>
+                  <span className="text-[#1e293b] text-lg font-medium leading-relaxed">
                     Strategic Networking: We bridge the gap between sales
                     organizations and reliable installation partners, providing
                     the tools you need to execute perfectly.
